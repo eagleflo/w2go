@@ -1,0 +1,43 @@
+/* Main CSS file for w2go, the web 2.0 go application */
+
+body { background-color: #D2DCEB; }
+
+#gutter {
+  background-color: #231921;
+  overflow: hidden;
+}
+
+header, hgroup {
+  color: #EBEBF0;
+  text-align: center;
+}
+
+h1 { margin-bottom: 0; text-shadow: 2px 2px 3px #999;}
+h2 { margin-bottom: 0; font-size: 10pt; }
+h3 { font-size: 8pt; }
+
+#content { margin-top: 20px; }
+
+canvas { 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+}
+
+aside {
+  background-color: #BEB4CB;
+  display: block;
+  min-height: 600px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+}
+
+aside p {
+  margin: 1.5em;
+}
+
+footer { text-align: right; }
+small { font-size: 8pt; }

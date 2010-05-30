@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title w2go
+    %link{:rel => "stylesheet", :href => "css/reset.css"}
+    %link{:rel => "stylesheet", :href => "css/text.css"}
+    %link{:rel => "stylesheet", :href => "css/960.css"}
+    %link{:rel => "stylesheet", :href => "css/screen.css"}
+    %script{:src => "js/jquery-1.4.2.min.js"}
+    %script{:src => "js/board.js"}
+  %body
+    #gutter
+      .container_12
+        %header.grid_3
+          %hgroup
+            %h1 w2go
+            %h2 [way to go]
+            %h3 the web 2.0 go application
+    #content.container_12
+      %section#board-section.grid_8
+        %canvas#board{:width => "600", :height => "600"}
+      %aside.grid_4
+        %p This is inside the aside.
+    .container_12
+      %footer.grid_12
+        %small © 2009, 2010 Aku Kotkavuo

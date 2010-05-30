@@ -1,0 +1,28 @@
+w2go - the web 2.0 go application
+
+An experimental HTML5 project to create a Go application within the browser.
+
+The initial scope is to create a versatile SGF browser, with the possibility to
+play additional moves by yourself -- essentially a tool for studying tsumego.
+To support this well, there are plans to create a backing web application that
+contains various sets of tsumego (from freely available sources). The web
+application would support tracking your progress through these sets.
+
+A full-blown SGF editor could be the next step after that, with the ability to
+record games as they are played and save them to a persistent database for
+later study. Further development ideas include the option for creating your own
+tsumego and publishing it for others to view, solve and comment.
+
+Due to being HTML5 and using very modern browser features, this application
+will not currently work on most browsers. In particular, Firefox is not
+supported until they fully implement canvas -- they are currently missing some
+optional (but vital) arguments for the putImageData function. A bug report has
+been filed: https://bugzilla.mozilla.org/show_bug.cgi?id=498826 .
+
+The application has been tested to work with Safari 4 and Google Chrome 4 on
+Mac OS X so far.
+
+The application uses Sinatra as its framework. To get your local copy running,
+run w2go.rb and point your browser to http://localhost:4567/ . The application
+is being developed with Ruby 1.9 and it requires the gems 'sinatra' and 'haml'
+(versions 1.0 and 3.0.6, respectively).

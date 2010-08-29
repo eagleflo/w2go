@@ -35,8 +35,8 @@ function Board() {
     if (event.which != 1) return;
 
     // Get the real coordinates from mouse position and validate them.
-    var x = Math.round((event.layerX - 30.5) / 30);
-    var y = 19 - Math.round((event.layerY - 30.5) / 30);
+    var x = Math.round((event.offsetX - 30.5) / 30);
+    var y = 19 - Math.round((event.offsetY - 30.5) / 30);
     if (x < 0 || x > 18 || y < 1 || y > 19) return;
 
     // The event needs to be sent to the backend server through some API.

@@ -19,10 +19,10 @@ supported until they fully implement canvas -- they are currently missing some
 optional (but vital) arguments for the putImageData function. A bug report has
 been filed: https://bugzilla.mozilla.org/show_bug.cgi?id=498826 .
 
-The application has been tested to work with Safari 4 and Google Chrome 4 on
+The application has been tested to work with Safari 5 and Google Chrome 5 on
 Mac OS X so far.
 
 The application uses Sinatra as its framework. To get your local copy running,
 run w2go.rb and point your browser to http://localhost:4567/ . The application
 is being developed with Ruby 1.9 and it requires the gems 'sinatra' and 'haml'
-(versions 1.0 and 3.0.6, respectively).
+(versions 1.0 and 3.0.18, respectively).

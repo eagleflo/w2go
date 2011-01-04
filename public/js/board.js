@@ -21,13 +21,13 @@ $(document).ready(function() {
 function Board() {
   // Set up the board and context.
   this.canvas = document.getElementById("board");
-  this.context = board.getContext("2d");
+  this.context = this.canvas.getContext("2d");
 
   // This is a static variable because it is used outside the Board context.
   Board.letters = "ABCDEFGHJKLMNOPQRST".split("");
 
   // Draw the board and save its empty state for clearing stones from it.
-  this.draw()
+  this.draw();
   this.clean = this.context.getImageData(0, 0, 600, 600);
 
   this.canvas.onmousedown = function(event) {
@@ -35,12 +35,13 @@ function Board() {
     if (event.which != 1) return;
 
     // Get the real coordinates from mouse position and validate them.
-    var x = Math.round((event.offsetX - 30.5) / 30);
-    var y = 19 - Math.round((event.offsetY - 30.5) / 30);
+    var x = Math.round((event.pageX - this.offsetLeft - 30.5) / 30);
+    var y = 19 - Math.round((event.pageY - this.offsetTop - 30.5) / 30);
     if (x < 0 || x > 18 || y < 1 || y > 19) return;
 
     // The event needs to be sent to the backend server through some API.
-    alert(Board.letters[x] + y);
+    var coords = Board.letters[x] + y;
+    alert(coords);
   }
 }
 

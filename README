@@ -13,16 +13,13 @@ record games as they are played and save them to a persistent database for
 later study. Further development ideas include the option for creating your own
 tsumego and publishing it for others to view, solve and comment.
 
-Due to being HTML5 and using very modern browser features, this application
-will not currently work on most browsers. In particular, Firefox is not
-supported until they fully implement canvas -- they are currently missing some
-optional (but vital) arguments for the putImageData function. A bug report has
-been filed: https://bugzilla.mozilla.org/show_bug.cgi?id=498826 .
+The application has been tested to work with Safari 5, Google Chrome 10 and
+Firefox 4 beta 8 on Mac OS X so far.
 
-The application has been tested to work with Safari 5 and Google Chrome 5 on
-Mac OS X so far.
+Opera is not supported until they fully implement canvas -- they are currently
+missing some optional (but vital) arguments for the putImageData function.
+Firefox only added support for these arguments very recently, in Firefox 4.0b8.
 
 The application uses Sinatra as its framework. To get your local copy running,
 run w2go.rb and point your browser to http://localhost:4567/ . The application
-is being developed with Ruby 1.9 and it requires the gems 'sinatra' and 'haml'
-(versions 1.0 and 3.0.18, respectively).
+is being developed with Ruby 1.9 and it requires the gems 'sinatra' and 'haml'.
